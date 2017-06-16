@@ -1,0 +1,250 @@
+html {
+	height:100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color:#efefef;
+}
+div {
+	display: block;
+}
+ul {
+	list-style-type: none;
+	float:left;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+.head {
+	height: 46px;
+	background-color: rgba(34,35,36,0.95);
+}
+.inner-head {
+	width: 1000px;
+	height: 46px;
+	margin: 0 auto;
+}
+.nav ul li {
+	float: left;
+	height: 46px;
+}
+.nav ul li a {
+	color: white;
+	font-size: 16px;
+	display: block;
+	height: 16px;
+	padding: 15px 17px;
+	line-height: 16px;
+}
+.nav ul li a:hover {
+	background-color: black;
+}
+
+.searcher {
+	float:left;
+	margin: 10px 0 0 20px ;
+	width:200px;
+	height: 26px;
+	background-color: #4a4b4c;
+	position: relative;
+
+}
+.searcher h2 {
+	margin:0;
+}
+.sort {
+	width: 76px;
+}
+.key{
+    float:left;
+    width:119px;
+    height: 26px;
+    margin: 0;
+    padding: 0 30px 0 8px;
+    border: 0 none;
+    color: white;
+    font-size: 14px;
+    line-height: 14px;
+    background: 0;
+}
+.button {
+	float:left;
+	height:26px;
+	background-color: #1493e3;
+	display:block;
+	font-size:14px;
+	color: #fff;
+	text-align: center;
+	line-height: 24px;
+	border-radius: 4px;
+	cursor:pointer;
+	border:none;
+}
+form {
+	display: block;
+}
+.header {
+	height: 58px;
+	background-color: white;
+}
+.header-wrap {
+	width: 1000px;
+	height: 58px;
+	margin: 0 auto;
+}
+.nav-down {
+	line-height: 58px;
+	font-size: 14px;
+	padding: 0 10px 0 35px;
+	display: inline;
+    height: 100%;
+    float: right;
+}
+.nav-down li {
+	float: left;
+}
+.nav-down li a {
+	margin-left: 12px;
+	font-size: 18px;
+	height: 48px;
+	line-height: 38px;
+	color: #444;
+	margin-top: 10px;
+	padding: 0 15px;
+	color: #333;
+	overflow: hidden;
+	vertical-align: top;
+	display: inline-block;
+}
+.nav-down li a:hover {
+	color: blue;
+    height: 56px;
+    cursor: pointer;
+}
+.shadow {
+	position:absolute;
+	left: 0;
+	right: 0;
+	top: 104px;
+	width: 100%;
+	height: 2px;
+	border-top: 1px solid #d6d6d6;
+	background-color: rgba(0,0,0,.06);
+}
+.center {
+	width: 980px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.left {
+	width: 280px;
+	height:100%;
+    float: left;
+    position: relative;
+}
+.information {
+	width: 280px;
+	height: 350px;
+	background-color: white;
+	box-shadow: 0 0 2px rgba(0,0,0,0.05);
+	margin-top: 10px;
+	border-radius: 20px;
+}
+.right {
+	width:682px;
+	height: 100%;
+	margin-top: 18px;
+	float: right;
+	margin-bottom: 20px;
+}
+.common_block {
+	height: 78px;
+	padding: 20px 0 17px;
+	position:relative;
+	margin-bottom: 18px;
+	background-color: #fff;
+	border:#e2e2e2 1px solid;
+	box-shadow: 0 0 2px rgba(0,0,0,0.05);
+}
+.common_block ul li {
+	float:left;
+	width: 25%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+}
+.clearfix {
+	width:100%;
+	height:100%;
+}
+.common_block ul li a {
+	color: #999;
+	font-size: 16px;
+	display: block;
+	margin-top:25px;
+}
+.common_block ul li a:hover {
+	color: blue;
+}
+.common_block ul li:after {
+	content: '';
+	width: 1px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #e5e5e5;
+}
+.myyouji {
+	width: 100%;
+	height: 523px;
+	background-color: #fff;
+	border: #e2e2e2 1px solid;
+	box-shadow: 0 0 2px rgba(0,0,0,0.05)
+}
+.youjititle {
+	padding: 25px 30px;
+	line-height: 30px;
+	position: relative;
+	float: left;
+}
+.youjititle h2 {
+	margin: 0;
+	font-size: 20px;
+	color: #444;
+	font-weight: normal;
+}
+.write {
+    cursor:pointer;
+    width: 140px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: blue;
+    float: right;
+    margin: 25px 30px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+}
+.write:hover {
+	opacity: 0.8;
+}
+.neirong {
+	position: relative;
+	margin-top: 90px;
+	height: 420px;
+	overflow: hidden;
+	overflow-y: auto;
+	width:622px;
+	margin: 0 auto;
+}
+.neirong ul li p {
+	height: 105px;
+	overflow: hidden;
+}

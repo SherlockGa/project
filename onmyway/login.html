@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<title>登录 - On My Way</title>
+	<meta name="登录" content="自助游攻略，自由行攻略，旅游指南">
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<script>
+    /*使login-box水平垂直居中*/
+    window.onload=function box() {
+    	var x=document.getElementsByClassName("login-box")[0];
+    	var l1=x.offsetWidth;
+    	var h1=x.offsetHeight;
+    	var left=(document.documentElement.clientWidth-l1)/2;
+        var top=(document.documentElement.clientHeight-h1)/2;
+        x.style.left=left+'px';
+        x.style.top=top+'px';
+        window.onresize=function() {
+        	box();
+        }
+        var x=document.getElementsByClassName("username")[0];
+        var y=document.getElementsByClassName("check")[0];
+        x.onblur=function() {
+            if(this.value=="") {
+                   y.style.color="red";
+            }
+            else y.style.color="white";
+        }
+}
+</script>
+<form method="post" action="checklg.php" role="form" class="login-box">
+        <div class="check">
+            !账号不能为空
+        </div>
+            <input name="username" class="username" type="text" placeholder="邮箱/手机号" autocomplete="off">
+            <input name="password" class="username" type="password" placeholder="密码" autocomplete="off" style="padding-top: 10px">
+            <button class="login-button" type="submit">登  录</button>
+        <div class="forget">
+           还没有账号？<a href="regist.html">马上注册</a>
+        </div>
+</form>
+    <div class="fullscreen">  </div>
+
+</body>
+</html>

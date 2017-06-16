@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<title>注册</title>
+	<meta name="登录" content="自助游攻略，自由行攻略，旅游指南">
+    <link rel="stylesheet" type="text/css" href="css/regist.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<script>
+    /*使login-box水平垂直居中*/
+    function getLength(str) {
+    return str.replace(/[^\x00-\xff]/g,"xx").length;
+}
+    function findStr(str,n) {
+        var tmp=0;
+        for(var i=0;i<str.length;i++) {
+            if(str.charAt(i)==n) tmp++;
+        }
+        return tmp;
+    }
+    window.onload=function box() {
+    	var x=document.getElementsByClassName("login-box")[0];
+    	var l1=x.offsetWidth;
+    	var h1=x.offsetHeight;
+    	var left=(document.documentElement.clientWidth-l1)/2;
+        var top=(document.documentElement.clientHeight-h1)/2;
+        x.style.left=left+'px';
+        x.style.top=top+'px';
+        window.onresize=function() {
+        	box();
+        }
+        var aInput=document.getElementsByTagName("input");
+        var oName=aInput[0];
+        var pwd=aInput[1];
+        var pwd2=aInput[2];
+        var aP=document.getElementsByTagName("p");
+        var name_msg=aP[0];
+        var pwd_msg=aP[1];
+        var pwd2_msg=aP[2];
+        var name_length=0;
+        //用户名
+        //数字、字母（不分大小写）、汉字、下划线
+        //5-25个字符，推荐使用中文会员名
+        oName.onfocus=function() {
+            name_msg.style.display="block";
+            name_msg.style.color="red";
+            name_msg.innerHTML="5-25个字符，一个汉字为两个字符，推荐使用中文会员名";
+        }
+        oName.onkeyup=function() {
+            name_length=getLength(this.value);
+        }
+        oName.onblur=function() {
+            //含有非法字符
+            var re=/[^\w\u4e00-\u9fa5]/g;
+            if(re.test(this.value)) {
+                name_msg.innerHTML="含有非法字符!"
+            }
+            //不能为空
+            else if(this.value=="") {
+                name_msg.innerHTML="不能为空！"
+            }
+            //长度超过25个字符
+            else if(name_length>25) {
+                name_msg.innerHTML="长度超过25个字符！"
+            }
+            //长度少于6个字符
+            else if(name_length<6) {
+                name_msg.innerHTML="长度少于6个字符！"
+            }
+            //ok
+           else name_msg.style.color="white";
+        }
+        //密码
+        pwd.onfocus=function() {
+            pwd_msg.style.display="block";
+            pwd_msg.style.color="red";
+            pwd_msg.innerHTML="6-16个字符，不能单独使用数字、字母或符号"
+        }
+        pwd.onkeyup=function() {
+            if(this.value.length>5) {
+                pwd2.removeAttribute("disabled");
+                pwd2_msg.style.display="block";
+            }
+            else {
+                pwd2.setAttribute("disabled");
+                pwd2_msg.style.color="white";
+            }
+        }
+        pwd.onblur=function() {
+            var m=findStr(pwd.value,pwd.value[0]);
+            var re_n=/[^\d]/g;
+            var re_t=/[^a-zA-Z]/g;
+            //不能为空
+            if(this.value=="") {
+                pwd_msg.innerHTML="不能为空!";
+            }
+            //不能用相同字符
+            else if(m==this.value.length) {
+                pwd_msg.innerHTML="不能用相同字符!"
+            }
+            //长度为6-16个字符
+            else if(this.value.length<6||this.value.length>16) {
+                pwd_msg.innerHTML="长度应为6-16个字符！";
+            }
+            //不能全为数字
+            else if(!re_n.test(this.value)) {
+                pwd_msg.innerHTML="不能全为数字!";
+            }
+            //不能全为字母
+            else if(!re_t.test(this.value)) {
+                pwd_msg.innerHTML="不能全为字母!";
+            }
+            //OK
+            else {
+                pwd_msg.style.color="white";
+            }
+        }
+        //确认密码
+        pwd2.onblur=function() {
+            if(this.value!=pwd.value)
+              {  
+                pwd2_msg.style.color="red";
+                pwd2_msg.innerHTML="两次输入的密码不一致！";}
+            else {
+                pwd2_msg.style.color="white";
+            }
+        }
+}
+</script>
+<form role="form" method="post" action="checkreg.php" class="login-box">
+            <input name="username" class="username" type="text" placeholder="用户名" autocomplete="off" style="margin-top: 22px;">
+        <p class="check">用户名
+        </p>
+            <input name="password" class="username" type="password" placeholder="密码" autocomplete="off" style="padding-top: 10px;">
+        <p class="check">密码
+        </p>
+            <input name="passwordagain" class="username" type="password" disabled="" placeholder="再次输入密码" autocomplete="off" style="padding-top: 10px">
+        <p class="check">再次输入密码     
+        </p>
+            <button class="login-button" type="submit">立即注册</button>
+          <div class="forget">
+           已经注册？<a href="login.html">马上登陆</a>
+        </div>
+</form>
+    <div class="fullscreen">  </div>
+
+</body>
+</html>

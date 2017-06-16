@@ -1,0 +1,136 @@
+ul {
+	padding: 0;
+}
+.row-place {
+	height: 220px;
+	background-color: #fafafa;
+	border-bottom: 1px solid #e4e4e4;
+}
+.wrapper {
+	width:1000px;
+	margin: 0 auto;
+	height:100%;
+}
+.crumb {
+	width:1000px;
+	font-size:12px;
+	height: 20px;
+	padding: 15px 0;
+	line-height: 20px;
+}
+.item {
+	float: left;
+}
+.item a {
+	color: #666;
+}
+.item strong {
+	color: blue;
+}
+.item em {
+	margin: 0 6px;
+	color: #999;
+	font-style: normal;
+}
+.title {
+	margin:0 0 20px;
+}
+.title h1 {
+	margin:0;
+	margin-right: 15px;
+	font-weight: normal;
+	font-size: 40px;
+	color: #333;
+}
+.gonglue {
+	width:1000px;
+	margin: 0 auto;
+	height: 520px;
+}
+.gonglue h2 {
+	margin-bottom: 30px;
+	text-align: left;
+	font-size: 26px;
+	color: #333;
+	font-weight: normal;
+	line-height: 30px;
+}
+.gonglue ul {
+	height:220px;
+	width: 1040px;
+}
+.gonglue ul li {
+	float: left;
+	width:310px;
+	display: inline;
+	margin-right: 35px;
+	height: 220px;
+}
+.img {
+	display: block;
+	margin-bottom: 10px;
+	height: 170px;
+	position: relative;
+}
+.word {
+	margin-bottom: 5px;
+	display: block;
+	width: 320px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 18px;
+	color: black;
+
+}
+.word:hover {
+	text-decoration: underline;
+	color: blue;
+}
+.youji {
+	background-color: #fafafa;
+	border-bottom: 1px solid #e4e4e4;
+	border-top: 1px solid #e4e4e4;
+}
+.wrapper-down {
+	padding: 40px 0;
+}
+.sort {
+	float: left;
+	width:120px;
+	display: inline;
+	margin-right: 5px;
+	line-height: 28px;
+	color: #666;
+	position: relative;
+	border-radius: 4px;
+}
+.trigger {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #fff;
+
+}
+.trigger span {
+	font-size: 12px;
+    padding: 0 13px;
+}
+.sort:hover {
+	border:1px solid blue;
+	cursor: pointer;
+}
+.select {
+    display: none;
+    font-size: 14px;
+    background-color: white;
+   
+    
+}
+
+.select ul li a {
+	color: #666;
+	display: block;
+	padding: 0 13px;
+}
+.select ul li:hover {
+	background-color: #eee;
+}

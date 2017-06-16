@@ -1,0 +1,247 @@
+body {
+    font-family:Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 1040px;
+    height: 2100px;
+}
+div {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+ul,li,ol {
+    list-style-type: none;
+    margin: 0;
+}
+h3 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+}
+.header {
+    height: 58px;
+}
+.header-wrap {
+    width: 1000px;
+    height: 58px;
+    margin: 0 auto;
+}
+.logo {
+    padding: 13px 0;
+    height: 32px;
+    width: 200px;
+    float: left;
+}
+.onmyway-logo {
+    display: block;
+    width: 200px;
+    height: 36px;/*Logo大小可能会改变*/
+}
+.nav {
+    line-height: 58px;
+    font-size: 14px;
+    padding: 0 10px 0 35px;
+    display: inline;
+    height: 100%;
+    float: left;
+}
+.nav li {
+    float: left;
+}
+.nav li a {
+    padding: 0 16px;
+    color: #333;
+    overflow: hidden;
+    vertical-align: top;
+    display: inline-block;
+}
+.nav li a:hover {
+    border-bottom: 3px solid mediumpurple;
+    color: mediumpurple;
+    height: 56px;
+    cursor: pointer;
+}
+.search {
+    float: left;
+    padding: 14px 20px 13px;
+    height: 30px;
+    position: relative;
+    width: 150px;
+}
+.search input {
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    width: 150px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #666;
+    border-radius: 5px;
+}
+.icon-search {
+    top: 19px;
+    right: 5px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../image/图标.png);
+    background-position: -30px -110px!important;
+    overflow: hidden;
+}
+.login-out {
+    float: right;
+    padding: 16px 0;
+    height: 26px;
+    line-height: 26px;
+    position: relative;
+    right: 75px;
+}
+.login-out a {
+    font-size: 14px;
+    color: mediumpurple;
+}
+.login-out a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+.shadow {
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 58px;
+    width: 100%;
+    height: 2px;
+    border-top: 1px solid #d6d6d6;
+    background-color: rgba(0,0,0,.06);
+}
+.container {
+    width:1000px;
+    margin:0 auto;
+}
+.top {
+    margin:15px 0 20px;
+    font-size: 14px;
+}
+.top a{
+    color:black;
+}
+.top em{
+    color:mediumpurple;
+    font-style: normal;
+}
+.topic h1{
+    font-size: 30px;
+    color: #333;
+    line-height: 40px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5e5e5;
+    word-wrap: break-word;
+}
+h1 {
+    display: block;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+.topic .sub-tit {
+    overflow: hidden;
+}
+.topic .sub-tit {
+    color: #333;
+    font-size: 14px;
+    padding: 13px 0 0;
+    margin-bottom: 35px;
+}
+.topic .sub-tit .time {
+    float: right;
+    color: #999;
+}
+.topic .sub-tit .time em {
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.topic p {
+    font-size: 16px;
+    color: #333;
+    line-height: 26px;
+}
+.sub-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 18px 0;
+}
+.sub-content .setion-f {
+    font-size: 14px;
+    line-height: 26px;
+    margin: 13px 0 28px;
+}
+.tips {
+    margin: 35px 0;
+    border: 1px solid mediumpurple;
+    background-color: papayawhip;
+    padding: 15px 20px;
+    line-height: 26px;
+    color: #333;
+    font-size: 14px;
+}
+b, strong {
+    font-weight: bold;
+}
+.sub-content h3 {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #333;
+}
+.sub-content span {
+    color: #999;
+}
+.sub-content .section-f h4 {
+    color: #333;
+}
+.bottom {
+    padding-bottom: 100px;
+    clear: both;
+}
+.bottom .title {
+    font-size: 24px;
+    color: #333;
+    line-height: 55px;
+    height: 55px;
+    position: relative;
+}
+.pro_more {
+    float: right;
+    font-size: 14px;
+    color: mediumpurple;
+    margin-top: -55px;
+    position: relative;
+    line-height: 55px;
+}
+.bottom .bd {
+    margin-right: -50px;
+}
+.bottom .bd li {
+    float: left;
+    display: inline;
+    margin: 0 50px 50px 0;
+    width: 300px;
+    height: 228px;
+    position: relative;
+    overflow: hidden;
+}
+.bottom ul {
+    padding: 12px 0 67px 0;
+}
+.bottom .bd a {
+    display: block;
+    color: #666;
+}

@@ -1,0 +1,252 @@
+
+body {
+	position: relative;
+	font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+}
+ul {
+	padding: 0;
+}
+.show {
+	position: relative;
+	overflow: hidden;
+	z-index: 2;
+}
+.show-image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	min-width: 1040px;
+	
+}
+.show-image a {
+	display: block;
+	height: 100%;
+}
+.show-image a img {
+	width: 100%;
+	height: 100%;
+	margin: 0!important;
+}
+.youjititle {
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	height: 90px;
+	left: 0;
+	bottom: 0;
+	padding: 0 0 10px 200px;
+	margin: 0 auto;
+}
+.youjititle h1{
+    width: 710px;
+    height: 80px;
+    font-size: 26px;
+    color: #fff;
+    line-height: 80px;
+    margin: 0;
+}
+.touxiang {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	z-index: 2;
+	bottom: -65px;
+	padding: 0 0 10px 40px;
+}
+.touxiang img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.youji {
+	position: relative;
+	width: 1000px;
+	margin: 40px auto 20px;
+	z-index:1;
+}
+.blank {
+	width: 100%;
+	height: 80px;
+	border-bottom: 1px solid #d7d7d7;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.05);
+	position:relative;
+	z-index: 1;
+}
+.vc_time {
+	color: #acacac;
+	display: inline;
+	margin-left: 200px;
+	margin-top: 25px;
+	font-size: 13px;
+	position: absolute;
+	font-family: Verdana,Arial,Helvetica,STHeiti;
+}
+.view {
+    width: 680px;
+    float: left;
+    margin-bottom: 30px;
+}
+.travel_directory {
+	border: 1px dashed #d7d7d7;
+	padding-bottom: 18px;
+	width: 100%;
+	margin-bottom: 30px;
+	border-radius: 4px;
+	position: relative;
+	height: 80px;
+}
+.travel_directory ul li {
+	width: 170px;
+	margin-top: 35px;
+	float: left;
+	display: inline;
+	font-size: 18px;
+	height: 22px;
+	line-height: 22px;
+	color: #666;
+	padding-left: 5%;
+}
+.travel_directory ul li span {
+	color: blue;
+	margin: 0 5px;
+}
+.content {
+	line-height: 28px;
+	margin-bottom: 50px;
+}
+.pinglun {
+	padding-top: 50px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 50px;
+}
+}
+.everypinglun {
+	width: 100%;
+	font-size: 12px;
+	line-height: 20px;
+	margin-bottom: 24px;
+}
+.pingluntitle {
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	background-color: #f6f6f6;
+	border-top-left-radius: 24px;
+	border-bottom-left-radius: 24px;
+}
+.photo {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 20px;
+	position: relative;
+}
+.floor {
+	float: right;
+	padding-right: 10px;
+	font-size: 12px;
+	color: #999;
+}
+.pingluncontent {
+	padding-left: 68px;
+	margin-top: 12px;
+	position: relative;
+	color: #666;
+}
+.pingluntime {
+	padding-left: 68px;
+	height: 24px;
+	line-height: 24px;
+	color: #999;
+	margin-top: 16px;
+}
+.message {
+	padding-left: 68px;
+}
+.message h2 {
+	color: #666;
+}
+.replycontent {
+	width: 612px;
+	height: 256px;
+	border: 1px solid #eee;
+}
+.replycontent textarea {
+	width: 612px;
+	height: 256px;
+	border: 1px solid #e5e5e5;
+	outline: none;
+	font-size: 15px;
+}
+.xiangguan {
+	float: right;
+	width: 240px;
+}
+.dest {
+	margin-bottom: 20px;
+	padding: 0 18px;
+	background-color: #f6f6f6;
+	line-height: 40px;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.fabiao {
+	width: 160px;
+	height: 40px;
+	background-color: blue;
+	border-radius: 4px;
+	font-size: 18px;
+	line-height: 40px;
+	text-align: center;
+	color:#fff;
+	border: none;
+}
+.fabiao:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+.page {
+	position:absolute;
+	margin-top: 75px;
+	margin-left: 500px;
+	float: right;
+}
+.page span a {
+	color: #666;
+	text-decoration: none;
+}
+.page span a:hover {
+	text-decoration: underline;
+	color: black;
+}
+.note-title {
+	margin-bottom: 15px;
+	font-size: 16px;
+	line-height: 15px;
+}
+.catalog {
+	height: 369px;
+	overflow-y: auto;
+}
+.catalog li {
+	margin-bottom: 10px;
+	padding-left: 30px;
+}
+.catalog li i {
+	float: left;
+	margin-left: -30px;
+	color:#ccc;
+}
+.catalog li a {
+	color: #999;
+    font-size:12px;
+}
+.catalog li a:hover {
+	text-decoration: underline;
+}
